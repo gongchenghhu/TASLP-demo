@@ -76,15 +76,18 @@
         </div>
     </div>
     <p style="font-size: 18px;">
-      Current speech large language models build upon discrete speech representations,
-      which can be categorized into semantic tokens and acoustic tokens. However, existing speech tokens are not specifically designed for speech language modeling. We
-      establish SLMTokBench, a benchmark designed to assess the suitability of speech
-      tokens for building speech language models. Our results indicate that neither semantic nor acoustic tokens are ideal for this purpose. We propose SpeechTokenizer,
-      a unified speech tokenizer for speech large language models. SpeechTokenizer adopts the Encoder-Decoder architecture with residual vector quantization (RVQ).
-      Unifying semantic and acoustic tokens, SpeechTokenizer disentangles different aspects of speech information hierarchically across different RVQ layers. Leveraging
-      SpeechTokenizer, we construct a Unified Speech Language Model (USLM). Experimental results show that SpeechTokenizer performs comparably to EnCodec in
-      speech reconstruction and demonstrates strong performance on the SLMTokBench
-      benchmark. The USLM outperforms VALL-E in zero-shot Text-to-Speech tasks. 
+      While neural text-to-speech (TTS) has achieved human-like natural synthetic speech, 
+multilingual TTS systems are limited to resource-rich languages
+due to the need for large paired text and studio-quality audio data. 
+This paper proposes a method for zero-shot multilingual TTS using discrete speech representations from a pre-train multi-lingual SSL model. 
+Inspired by the strong cross-lingual transferability of multilingual language models, our framework first corporate pre-trained multilingual 
+representations and text encode with pre-train SSL speech representations.
+Experiments on the high-resources language show our model’s effectiveness in terms of speech naturalness and similarity for both 
+seen and unseen speakers, and 
+frequency analysis of the discrete representaions show that cross-lingual phonetic information about speech production is 
+preserved in extracted discrete vectors. We also verify the effectiveness of the method on several
+hypothesized low-resource languages. This promisingly indicates that even without any training data for new unseen language, our proposed approach could synthe-
+sized audio that is understandable and has high speaker similarity.
     </p>
 
     <div class="text-center">
