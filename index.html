@@ -86,8 +86,7 @@ Experiments on the high-resources language show our model’s effectiveness in t
 seen and unseen speakers, and 
 frequency analysis of the discrete representaions show that cross-lingual phonetic information about speech production is 
 preserved in extracted discrete vectors. We also verify the effectiveness of the method on several
-hypothesized low-resource languages. This promisingly indicates that even without any training data for new unseen language, our proposed approach could synthe-
-sized audio that is understandable and has high speaker similarity.
+hypothesized low-resource languages. This promisingly indicates that even without any training data for new unseen language, our proposed approach could synthesized audio that is understandable and has high speaker similarity.
     </p>
 
     <div class="text-center">
@@ -122,59 +121,102 @@ sized audio that is understandable and has high speaker similarity.
 			</tr>
 			</thead>
 			<tbody>
-
-            <td style="text-align: center;vertical-align:middle;width: 800px"><b>EnCodec</b></td>
-            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="reconstruction/e/1/raw.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="reconstruction/e/1/rvq_1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="reconstruction/e/1/rvq_2_8.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="reconstruction/e/1/rvq_8.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-            </tr>
-
+	
             <tr>
-            <td style="text-align: center;vertical-align:middle;width: 800px"><b>SpeechTokenizer</b></td>
-            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="reconstruction/s/1/raw.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="reconstruction/s/1/rvq_1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="reconstruction/s/1/rvq_2_8.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="reconstruction/s/1/rvq_8.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><b>Base1C</b></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/00_English" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/00_French" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/00_German" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/00_Portuguese" autoplay/>Your browser does not support the audio element.</audio></td>
+	    <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/00_Spanish" autoplay/>Your browser does not support the audio element.</audio></td>
+	    <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/00_Swedish" autoplay/>Your browser does not support the audio element.</audio></td>		
+            </tr>
+             <tr>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><b>Base2C</b></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/01_English" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/01_French" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/01_German" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/01_Portuguese" autoplay/>Your browser does not support the audio element.</audio></td>
+	    <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/01_Spanish" autoplay/>Your browser does not support the audio element.</audio></td>
+	    <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/01_Swedish" autoplay/>Your browser does not support the audio element.</audio></td>		
+            </tr>
+             <tr>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><b>Pro1C</b></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/02_English" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/02_French" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/02_German" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/02_Portuguese" autoplay/>Your browser does not support the audio element.</audio></td>
+	    <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/02_Spanish" autoplay/>Your browser does not support the audio element.</audio></td>
+	    <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/02_Swedish" autoplay/>Your browser does not support the audio element.</audio></td>		
             </tr>
 
-            <tr>
-            <td style="text-align: center;vertical-align:middle;width: 800px"><b>EnCodec</b></td>
-            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="reconstruction/e/2/raw.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="reconstruction/e/2/rvq_1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="reconstruction/e/2/rvq_2_8.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="reconstruction/e/2/rvq_8.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+	     <tr>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><b>Pro2C</b></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/03_English" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/03_French" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/03_German" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/03_Portuguese" autoplay/>Your browser does not support the audio element.</audio></td>
+	    <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/03_Spanish" autoplay/>Your browser does not support the audio element.</audio></td>
+	    <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/03_Swedish" autoplay/>Your browser does not support the audio element.</audio></td>		
             </tr>
 
-            <tr>
-            <td style="text-align: center;vertical-align:middle;width: 800px"><b>SpeechTokenizer</b></td>
-            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="reconstruction/s/2/raw.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="reconstruction/s/2/rvq_1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="reconstruction/s/2/rvq_2_8.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="reconstruction/s/2/rvq_8.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+	     <tr>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><b>Base1X</b></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/04_English" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/04_French" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/04_German" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/04_Portuguese" autoplay/>Your browser does not support the audio element.</audio></td>
+	    <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/04_Spanish" autoplay/>Your browser does not support the audio element.</audio></td>
+	    <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/04_Swedish" autoplay/>Your browser does not support the audio element.</audio></td>		
+            </tr>
+             <tr>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><b>Base2X</b></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/05_English" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/05_French" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/05_German" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/05_Portuguese" autoplay/>Your browser does not support the audio element.</audio></td>
+	    <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/05_Spanish" autoplay/>Your browser does not support the audio element.</audio></td>
+	    <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/05_Swedish" autoplay/>Your browser does not support the audio element.</audio></td>		
+            </tr>
+             <tr>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><b>Pro1X</b></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/06_English" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/06_French" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/06_German" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/06_Portuguese" autoplay/>Your browser does not support the audio element.</audio></td>
+	    <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/06_Spanish" autoplay/>Your browser does not support the audio element.</audio></td>
+	    <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/06_Swedish" autoplay/>Your browser does not support the audio element.</audio></td>		
             </tr>
 
-
-            <tr>
-            <td style="text-align: center;vertical-align:middle;width: 800px"><b>EnCodec</b></td>
-            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="reconstruction/e/3/raw.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="reconstruction/e/3/rvq_1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="reconstruction/e/3/rvq_2_8.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="reconstruction/e/3/rvq_8.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+	     <tr>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><b>Pro2X</b></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/07_English" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/07_French" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/07_German" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/07_Portuguese" autoplay/>Your browser does not support the audio element.</audio></td>
+	    <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/07_Spanish" autoplay/>Your browser does not support the audio element.</audio></td>
+	    <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/07_Swedish" autoplay/>Your browser does not support the audio element.</audio></td>		
             </tr>
 
-
-            <tr>
-            <td style="text-align: center;vertical-align:middle;width: 800px"><b>SpeechTokenizer</b></td>
-            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="reconstruction/s/3/raw.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="reconstruction/s/3/rvq_1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="reconstruction/s/3/rvq_2_8.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="reconstruction/s/3/rvq_8.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+	     <tr>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><b>YourTTS</b></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/08_English" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/08_French" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/08_German" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/08_Portuguese" autoplay/>Your browser does not support the audio element.</audio></td>
+	    <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/08_Spanish" autoplay/>Your browser does not support the audio element.</audio></td>
+	    <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/08_Swedish" autoplay/>Your browser does not support the audio element.</audio></td>		
             </tr>
 
-           
-            
-
+	    <tr>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><b>GT</b></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/09_English" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/09_French" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/09_German" autoplay/>Your browser does not support the audio element.</audio></td>
+            <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/09_Portuguese" autoplay/>Your browser does not support the audio element.</audio></td>
+	    <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/09_Spanish" autoplay/>Your browser does not support the audio element.</audio></td>
+	    <td style="text-align: center;vertical-align:middle;width: 800px"><audio controls="controls" style="width: 120px;"><source src="SeenAudios/09_Swedish" autoplay/>Your browser does not support the audio element.</audio></td>		
+            </tr>
             </tbody>
         </table>
     </div>
