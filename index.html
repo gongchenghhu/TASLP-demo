@@ -76,13 +76,21 @@
         </div>
     </div>
     <p style="font-size: 18px;">
-     While neural text-to-speech (TTS) has achieved human-like natural synthetic speech, multilingual TTS systems are limited to resource-rich languages due to the need for
-large paired text and studio-quality audio data. This paper proposes a method for zero-shot multi-lingual TTS using discrete speech representations from a pre-train multi-lingual SSL model.
-Inspired by the strong cross-lingual transferability of multilingual language models, our framework first incorporates pre-trained
-multilingual representations and text encoder with pre-train SSL speech representations. Experiments on the high-resource language show our model’s effectiveness in terms of speech
-naturalness and similarity for both seen and unseen speakers, and frequency analysis of the discrete representations shows that cross-lingual phonetic information about speech production
-is preserved in extracted discrete vectors. We also verified the effectiveness of the method on two hypothetical low-resource languages. This promisingly indicates that even without any
-training data for new unseen language, our proposed approach could synthesize audio that is understandable and has high speaker similarity
+     While neural text-to-speech (TTS) has successfully achieved human-like synthetic speech for one language, 
+multilingual TTS systems are limited to resource-rich languages due to the substantial requirements for paired text and 
+studio-quality audio data. In most cases, TTS systems are built using a single speaker's voice. 
+However, there is growing interest in developing systems that can synthesize voices for new speakers using only a few seconds of speech. 
+This paper presents ZMM-TTS, a multilingual and multispeaker framework utilizing audio discrete representations from a large-scale, 
+pre-trained, self-supervised model. Our paper is the first to incorporate the representations from text-based and speech-based 
+self-supervised learning models into multilingual speech synthesis tasks. 
+We conducted comprehensive subjective and objective evaluations through a series of experiments. 
+Our model has been proven effective in terms of speech naturalness and similarity for both seen and unseen speakers in 
+six high-resource languages. Furthermore, the frequency analysis of the discrete representations reveals that cross-lingual 
+phonetic information about speech production is preserved in the extracted discrete vectors. 
+We also tested the efficiency of our method on two low-resource hypothetical languages. 
+The results are promising, indicating that our proposed approach can synthesize audio that is easily understandable
+and has a high degree of similarity to the speaker's voice, 
+even without any training data for the new, unseen language.
     </p>
     <div class="text-center">
         <img id="teaser" width="90%" src="images/fig1_demo2.png">     
